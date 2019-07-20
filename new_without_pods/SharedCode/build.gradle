@@ -16,11 +16,13 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
+            implementation "com.soywiz.korlibs.klock:klock:1.4.0"
         }
-
+        
         androidMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib'
         }
+
     }
 }
 
