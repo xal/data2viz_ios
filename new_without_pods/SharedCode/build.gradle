@@ -8,7 +8,6 @@ kotlin {
 
         fromPreset(iOSTarget, 'iOS') {
             compilations.main.outputKinds('FRAMEWORK')
-
         }
 
         fromPreset(presets.jvm, 'android')
@@ -17,17 +16,10 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
-//            implementation group: 'io.data2viz', name: 'd2v-time-common', version: '0.7.2-RC1'
         }
-//        iosMain.dependencies {
-//            api 'org.jetbrains.kotlin:kotlin-stdlib-common'
-//        }
-        
 
         androidMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib'
-            implementation 'com.jakewharton.threetenabp:threetenabp:1.1.0'
-//            implementation group: 'io.data2viz', name: 'd2v-time-android', version: '0.7.2-RC1'
         }
     }
 }
